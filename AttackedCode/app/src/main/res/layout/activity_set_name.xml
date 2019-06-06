@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a12088.attackedcode.SetNameActivity">
+    <TextView
+        android:id="@+id/titleBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#D3F2E1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
+        android:text="修改用户名"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+    <Button
+
+        android:id="@+id/button_exit_from_set_name"
+
+        android:layout_width="60dp"
+
+        android:layout_height="60dp"
+
+        android:layout_marginTop="5dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/exit"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        tools:ignore="HardcodedText" />
+
+
+
+    <EditText
+
+        android:id="@+id/text_user_newname"
+
+        android:layout_width="318dp"
+
+        android:layout_height="58dp"
+        android:layout_marginTop="70dp"
+        android:background="#FFFAFA"
+
+        android:hint="输入4-15字符"
+
+        android:textSize="25sp"
+
+        android:textColor="#000000"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/titleBackground" />
+
+
+
+    <Button
+
+        android:id="@+id/button_confirm_name"
+
+        android:layout_width="172dp"
+
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/text_user_newname"
+
+        android:background="#FFFAFA"
+
+        android:text="确认修改"
+
+        android:textSize="25sp"
+
+        android:textColor="#DC143C"
+
+        />
+</android.support.constraint.ConstraintLayout>

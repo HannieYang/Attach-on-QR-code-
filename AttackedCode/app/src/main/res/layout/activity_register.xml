@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3F2E1"
+    tools:context="com.example.a12088.attackedcode.RegisterActivity">
+
+    <TextView
+
+        android:id="@+id/title_register"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="45dp"
+        android:text="注册新账号"
+
+
+        android:textColor="#ed8cb1"
+
+        android:textSize="40sp"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <TextView
+
+        android:id="@+id/new_user_name"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="账号"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ed8cb1"
+
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_register"
+        android:layout_marginStart="20dp" />
+
+
+
+    <TextView
+
+        android:id="@+id/new_user_password"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="密码"
+
+        android:textColor="#ed8cb1"
+
+        android:textSize="25sp"
+
+        app:layout_constraintLeft_toLeftOf="@id/new_user_name"
+        app:layout_constraintTop_toBottomOf="@id/new_user_name"/>
+
+
+
+    <TextView
+
+        android:id="@+id/re_new_user_password"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="重输"
+
+        android:textColor="#ed8cb1"
+
+        android:textSize="25sp"
+
+        app:layout_constraintLeft_toLeftOf="@id/new_user_name"
+        app:layout_constraintTop_toBottomOf="@id/new_user_password"/>
+
+
+    <EditText
+
+        android:id="@+id/text_new_user_name"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="20dp"
+        android:hint="请输入用户名"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@id/new_user_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/new_user_name"
+        app:layout_constraintTop_toTopOf="@id/new_user_name" />
+
+
+
+    <EditText
+
+        android:id="@+id/re_text_new_user_password"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="20dp"
+        android:hint="重新输入一遍密码"
+        android:inputType="textPassword"
+
+        app:layout_constraintTop_toTopOf="@id/re_new_user_password"
+        app:layout_constraintLeft_toRightOf="@id/re_new_user_password"/>
+
+
+
+    <Button
+
+        android:id="@+id/button_confirm_register"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="注册"
+        android:textColor="#ed8cb1"
+
+        android:background="@android:color/transparent"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/re_new_user_password"/>
+
+
+    <EditText
+
+        android:id="@+id/text_new_user_password"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        app:layout_constraintLeft_toRightOf="@id/new_user_password"
+        app:layout_constraintStart_toEndOf="@+id/new_user_password"
+        app:layout_constraintTop_toTopOf="@id/new_user_password"
+         />
+
+    <Button
+
+        android:id="@+id/button_exit_from_register"
+
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+
+        android:layout_marginTop="5dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/exit"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        tools:ignore="HardcodedText" />
+</android.support.constraint.ConstraintLayout>

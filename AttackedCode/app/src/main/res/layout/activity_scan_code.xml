@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3F2E1"
+    tools:context="com.example.a12088.attackedcode.ScanCodeActivity">
+
+
+    <Button
+
+        android:id="@+id/button_exit_from_scan"
+
+        android:layout_width="40dp"
+
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+
+        android:background="@drawable/exit"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_scan_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始扫码"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+
+        android:id="@+id/string_of_code"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="二维码源码"
+
+        android:textSize="23sp"
+
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginStart="30dp" />
+
+
+
+    <TextView
+
+        android:id="@+id/text_string_of_code"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="89dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"/>
+
+
+
+    <TextView
+
+        android:id="@+id/safety_of_code"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="二维码安全性"
+
+        android:textSize="23sp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+
+        android:id="@+id/text_safety_of_code"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="40dp"
+
+        android:background="#FFFFFF"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+/>
+
+    <TextView
+
+        android:id="@+id/code_picture"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="二维码"
+
+        android:textSize="23sp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <ImageView
+        android:id="@+id/show_code_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:background="#FFFFFF"
+        />
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3F2E1"
+    tools:context="com.example.a12088.attackedcode.MoreActivity">
+    <Button
+
+        android:id="@+id/button_exit_from_more"
+
+        android:layout_width="60dp"
+
+        android:layout_height="60dp"
+
+        android:layout_marginTop="20dp"
+
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginStart="16dp"
+
+        android:background="@drawable/exit"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        tools:ignore="HardcodedText" />
+
+    <Button
+
+        android:id="@+id/button_information"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="制作者信息"
+
+        android:textSize="20sp"
+
+        android:background="@android:color/transparent"
+
+        app:layout_constraintLeft_toLeftOf="@id/button_personal"
+
+        app:layout_constraintTop_toBottomOf="@id/button_personal" />
+
+    <Button
+
+        android:id="@+id/button_record"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="历史记录"
+
+        android:textSize="20sp"
+
+        android:background="@android:color/transparent"
+
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintLeft_toLeftOf="@id/title_more"
+
+        app:layout_constraintTop_toBottomOf="@id/title_more" />
+
+
+
+    <Button
+
+        android:id="@+id/button_personal"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="个人设置"
+
+        android:textSize="20sp"
+
+        android:background="@android:color/transparent"
+
+        app:layout_constraintLeft_toLeftOf="@id/button_policy"
+
+        app:layout_constraintTop_toBottomOf="@id/button_policy" />
+
+
+
+    <Button
+
+        android:id="@+id/button_advice"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="意见反馈"
+
+        android:textSize="20sp"
+
+        android:background="@android:color/transparent"
+
+        app:layout_constraintLeft_toLeftOf="@id/button_record"
+
+        app:layout_constraintTop_toBottomOf="@id/button_record" />
+
+
+
+    <Button
+
+        android:id="@+id/button_policy"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="隐私政策"
+
+        android:textSize="20sp"
+
+        android:background="@android:color/transparent"
+
+        app:layout_constraintLeft_toLeftOf="@id/button_advice"
+
+        app:layout_constraintTop_toBottomOf="@id/button_advice"  />
+
+
+
+    <TextView
+
+        android:id="@+id/title_more"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="更多"
+
+        android:textSize="30sp"
+
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintHorizontal_bias="0.697"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.121" />
+</android.support.constraint.ConstraintLayout>
